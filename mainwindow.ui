@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="lblCurFloor">
+    <property name="geometry">
+     <rect>
+      <x>62</x>
+      <y>30</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDescription">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>52</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Floor:</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>111</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Numeric Pad</string>
+    </property>
+    <widget class="QCheckBox" name="npF1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF6">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF4">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>100</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>9</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>7</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF12">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>12</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF10">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>11</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="npF8">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>41</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>8</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnGo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Go</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="treeSteps">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>60</y>
+      <width>181</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Steps</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QGroupBox" name="gB1">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>30</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>1</string>
+    </property>
+    <widget class="QCheckBox" name="u1">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d1">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB1">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>90</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>2</string>
+    </property>
+    <widget class="QCheckBox" name="u2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB3">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>150</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>3</string>
+    </property>
+    <widget class="QCheckBox" name="u3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB3">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB4">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>210</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>4</string>
+    </property>
+    <widget class="QCheckBox" name="u4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d4">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB4">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB5">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>270</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>5</string>
+    </property>
+    <widget class="QCheckBox" name="u5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB5">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB6">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>330</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>6</string>
+    </property>
+    <widget class="QCheckBox" name="u6">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d6">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB6">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB10">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>210</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>10</string>
+    </property>
+    <widget class="QCheckBox" name="u10">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d10">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB10">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB7">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>30</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>7</string>
+    </property>
+    <widget class="QCheckBox" name="u7">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d7">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB7">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB8">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>90</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>8</string>
+    </property>
+    <widget class="QCheckBox" name="u8">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d8">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB8">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB9">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>150</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>9</string>
+    </property>
+    <widget class="QCheckBox" name="u9">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d9">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB9">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB11">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>270</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>11</string>
+    </property>
+    <widget class="QCheckBox" name="u11">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d11">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB11">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gB12">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>330</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>12</string>
+    </property>
+    <widget class="QCheckBox" name="u12">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="d12">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pB12">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/prefix1/greencircle</normaloff>:/new/prefix1/greencircle</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>npF1</tabstop>
+  <tabstop>npF2</tabstop>
+  <tabstop>npF3</tabstop>
+  <tabstop>npF4</tabstop>
+  <tabstop>npF5</tabstop>
+  <tabstop>npF6</tabstop>
+  <tabstop>npF7</tabstop>
+  <tabstop>npF8</tabstop>
+  <tabstop>npF9</tabstop>
+  <tabstop>npF10</tabstop>
+  <tabstop>npF11</tabstop>
+  <tabstop>npF12</tabstop>
+  <tabstop>btnGo</tabstop>
+  <tabstop>u1</tabstop>
+  <tabstop>d1</tabstop>
+  <tabstop>pB1</tabstop>
+  <tabstop>u2</tabstop>
+  <tabstop>d2</tabstop>
+  <tabstop>pB2</tabstop>
+  <tabstop>u3</tabstop>
+  <tabstop>d3</tabstop>
+  <tabstop>pB3</tabstop>
+  <tabstop>u4</tabstop>
+  <tabstop>d4</tabstop>
+  <tabstop>pB4</tabstop>
+  <tabstop>u5</tabstop>
+  <tabstop>d5</tabstop>
+  <tabstop>pB5</tabstop>
+  <tabstop>u6</tabstop>
+  <tabstop>d6</tabstop>
+  <tabstop>pB6</tabstop>
+  <tabstop>u10</tabstop>
+  <tabstop>d10</tabstop>
+  <tabstop>pB10</tabstop>
+  <tabstop>u7</tabstop>
+  <tabstop>d7</tabstop>
+  <tabstop>pB7</tabstop>
+  <tabstop>u8</tabstop>
+  <tabstop>d8</tabstop>
+  <tabstop>pB8</tabstop>
+  <tabstop>u9</tabstop>
+  <tabstop>d9</tabstop>
+  <tabstop>pB9</tabstop>
+  <tabstop>u11</tabstop>
+  <tabstop>d11</tabstop>
+  <tabstop>pB11</tabstop>
+  <tabstop>u12</tabstop>
+  <tabstop>d12</tabstop>
+  <tabstop>pB12</tabstop>
+  <tabstop>treeSteps</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
